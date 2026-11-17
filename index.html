@@ -560,6 +560,37 @@
       html { scroll-behavior: auto; }
       .button { transition: none; }
     }
+    /* Foto bij het onderdeel Presentaties */
+.speaker-layout {
+  align-items: start;
+}
+
+.speaker-photo {
+  margin: 0 16px 48px 0;
+  background: var(--cream);
+  box-shadow: 16px 16px 0 var(--orange);
+}
+
+.speaker-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 700px) {
+  .speaker-layout {
+    gap: 40px;
+  }
+
+  .speaker-photo {
+    margin-right: 10px;
+    margin-bottom: 36px;
+    box-shadow: 10px 10px 0 var(--orange);
+  }
+}
   </style>
 </head>
 
