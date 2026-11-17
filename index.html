@@ -591,6 +591,37 @@
     box-shadow: 10px 10px 0 var(--cream);
   }
 }
+    /* Publicatiekaartjes zonder rand */
+.publication {
+  border: none;
+}
+
+/* Afbeeldingen zonder gekleurd kader */
+.publication .publication-cover {
+  display: block;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.publication .publication-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+}
+
+/* Tekst direct uitlijnen onder de foto */
+.publication-body {
+  padding: 24px 0;
+}
   </style>
 </head>
 
@@ -860,10 +891,13 @@ In presentaties, artikelen en white papers vertel ik meer over de verbinding tus
           </article>
 
           <article class="publication">
-            <div class="publication-cover" aria-hidden="true">
-              <small>Straatbeeld</small>
-              <strong>Een gezonde leefomgeving</strong>
-            </div>
+            <div class="publication-cover publication-cover-photo">
+  <img
+    src="interview-straatbeeld.jpg"
+    alt=""
+    loading="lazy"
+  >
+</div>
 
             <div class="publication-body">
               <p class="meta">Interview · Straatbeeld</p>
@@ -881,10 +915,13 @@ In presentaties, artikelen en white papers vertel ik meer over de verbinding tus
           </article>
 
           <article class="publication">
-            <div class="publication-cover" aria-hidden="true">
-              <small>CFP Green Buildings</small>
-              <strong>Verbinding tussen werelden</strong>
-            </div>
+            <div class="publication-cover publication-cover-photo">
+  <img
+    src="interview-cfp.jpg"
+    alt=""
+    loading="lazy"
+  >
+</div>
 
             <div class="publication-body">
               <p class="meta">Interview · CFP Green Buildings</p>
